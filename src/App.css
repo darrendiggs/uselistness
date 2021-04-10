@@ -1,0 +1,11 @@
+
+.todo-app {
+  background-color: darkmagenta;
+ 
+}
+.main {
+  margin: 15px;
+}
+.todo-row.complete{
+  text-decoration: line-through;
+}
