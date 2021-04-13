@@ -1,11 +1,11 @@
 
 
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import { IoIosCloseCircle } from "react-icons/io";
 import { FiEdit } from "react-icons/fi";
 import TodoForm from './TodoForm';
 
-function Todo({ todos, completeTodo, removeTodo, updateTodo}) {
+function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
   const [edit, setEdit] = useState({
     id: null,
     value: ''
@@ -23,13 +23,13 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo}) {
     return <TodoForm edit={edit} onSubmit={submitUpdate} />
   }
 
-  return todos.map((todo, index) => (
+  return todos.map((todo) => (
     <div
       className={todo.isComplete ?
-        'todo-row animate__animated animate__bounceIn complete' :
-        'todo-row animate__animated animate__bounceIn'}
-      key={index}
-      
+        'todo-row animate__animated animate__bounceOut animate__delay-5s complete' :
+        'todo-row animate__animated animate__bounceOut animate__delay-5s'}
+      key={todo.id}
+      onAnimationEnd={() => removeTodo(todo.id)}
     >
 
       <h4 key={todo.id} onClick={() => completeTodo(todo.id)}>
@@ -44,9 +44,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo}) {
           onClick={() => setEdit({ id: todo.id, value: todo.text })}
           className="edit-icon"
         />
-
       </div>
-
     </div>
   ))
 }
