@@ -19,7 +19,7 @@ function TodoForm(props) {
     e.preventDefault();
 
     props.onSubmit({
-      id: Math.floor(Math.random() * 10000),
+      id: Math.floor(Math.random() * 100000),
       text: input
     })
 
@@ -29,33 +29,33 @@ function TodoForm(props) {
   return (
     <form className="todo-form " onSubmit={handleSubmit}>
       {props.edit ?
-        (<div className="input-group">
+        (<>
           <input
             type="text"
             placeholder="Update"
             value={input} name="text"
-            className="todo-input edit form-control"
+            className="todo-input edit"
             onChange={handleChange}
             ref={inputFocus}
           />
-          <div class="input-group-append">
-            <button className="todo-button edit btn btn-outline-light" >Update</button>
-          </div>
-        </div>)
+          
+            <button className="todo-button edit" >Update</button>
+          
+        </>)
         :
-        (<div className="input-group">
+        (<>
           <input
             type="text"
-            placeholder="Add a todo"
+            placeholder="something you're not planning on doing"
             value={input} name="text"
-            className="todo-input form-control"
+            className="todo-input "
             onChange={handleChange}
             ref={inputFocus}
           />
-          <div class="input-group-append">
-            <button className="todo-button btn btn-outline-light">Add todo</button>
-          </div>
-        </div>)
+      
+            <button className="todo-button">Add todo</button>
+         
+        </>)
       }
     </form>
   );
