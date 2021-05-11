@@ -23,7 +23,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     return <TodoForm edit={edit} onSubmit={submitUpdate} />
   }
 
-  return todos.map((todo) => (
+  return todos.map(todo => (
     <div
       className={todo.isComplete ?
         'todo-row animate__animated animate__bounceOut animate__delay-5s complete' :

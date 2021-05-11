@@ -46,7 +46,7 @@ function TodoForm(props) {
         (<>
           <input
             type="text"
-            placeholder="something you're not planning on doing"
+            placeholder="something you're not planning on doing."
             value={input} name="text"
             className="todo-input "
             onChange={handleChange}
