@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/uselistness/static/css/main.8aa9f246.chunk.css",
-    "main.js": "/uselistness/static/js/main.30b3ed81.chunk.js",
-    "main.js.map": "/uselistness/static/js/main.30b3ed81.chunk.js.map",
+    "main.css": "/uselistness/static/css/main.ec67ab5f.chunk.css",
+    "main.js": "/uselistness/static/js/main.92f3d4fd.chunk.js",
+    "main.js.map": "/uselistness/static/js/main.92f3d4fd.chunk.js.map",
     "runtime-main.js": "/uselistness/static/js/runtime-main.90f65cb0.js",
     "runtime-main.js.map": "/uselistness/static/js/runtime-main.90f65cb0.js.map",
     "static/js/2.510488e6.chunk.js": "/uselistness/static/js/2.510488e6.chunk.js",
     "static/js/2.510488e6.chunk.js.map": "/uselistness/static/js/2.510488e6.chunk.js.map",
     "index.html": "/uselistness/index.html",
-    "static/css/main.8aa9f246.chunk.css.map": "/uselistness/static/css/main.8aa9f246.chunk.css.map",
-    "static/js/2.510488e6.chunk.js.LICENSE.txt": "/uselistness/static/js/2.510488e6.chunk.js.LICENSE.txt"
+    "static/css/main.ec67ab5f.chunk.css.map": "/uselistness/static/css/main.ec67ab5f.chunk.css.map",
+    "static/js/2.510488e6.chunk.js.LICENSE.txt": "/uselistness/static/js/2.510488e6.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/uselistness/static/media/bg.9ab81ae3.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.90f65cb0.js",
     "static/js/2.510488e6.chunk.js",
-    "static/css/main.8aa9f246.chunk.css",
-    "static/js/main.30b3ed81.chunk.js"
+    "static/css/main.ec67ab5f.chunk.css",
+    "static/js/main.92f3d4fd.chunk.js"
   ]
 }
